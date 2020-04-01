@@ -1,0 +1,184 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top__nav__container {
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    font-size: 10pt;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+}
+
+ .top__nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.account_links  ul {
+    list-style: none;
+    margin: 2px 0%;
+}
+
+
+.account_links  ul li {
+    display: inline-block;
+    color: rgb(197, 197, 197);
+    padding: 0 2px;
+} 
+
+.account_links  ul li a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    text-transform: uppercase;
+}
+
+/* main nabvar */
+.navbar-brand-outside {
+    display: none  !important;
+}
+.navbar-brand {
+    font-size: 20pt !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media( max-width: 990px) {
+    .navbar-brand-inside {
+        display: none !important;
+    }
+
+    .navbar-brand-outside {
+        display: block !important;
+    }
+    .navbar-nav-social-links li{
+        display: none !important;
+    }
+}
+
+.navbar-nav-social-links i {
+    margin: 0 5px;
+    color: rgb(124, 82, 4);
+    border: 1.5px solid rgb(124, 82, 4);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.navbar-nav-social-links i.fa-facebook:hover {
+    color: rgb(16, 6, 107);
+    border-color:  rgb(16, 6, 107);
+}
+
+.navbar-nav-social-links i.fa-twitter:hover {
+    color: rgb(85, 70, 219);
+    border-color:  rgb(85, 70, 219);
+}
+
+.navbar-nav-social-links i.fa-instagram:hover {
+    color: rgb(199, 25, 25);
+    border-color: rgb(199, 25, 25);
+}
+
+.navbar-nav-social-links i.fa-pinterest:hover {
+    color: rgb(170, 5, 5);
+    border-color: rgb(170, 5, 5);
+}
+
+.nav-link {
+    font-size: 14pt !important;
+    color: rgb(66, 66, 66) !important;
+    border:1px solid transparent !important;
+}
+
+.nav-link:hover, .nav-link .active {
+    border:1px solid rgb(66, 66, 66) !important;
+    border-radius: 5px;
+}
+
+.landing-picture-section {
+    background: linear-gradient(rgb(192, 34, 34), rgb(81, 24, 156), blue);
+    height: 70vh;  
+    display: flex;
+}
+
+.landing-picture-section-inner {
+    height: 100%;
+}
+.landing-picture-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-picture-image img {
+    width: 80%;
+}
+
+/* shipping-return-support */
+.shipping-return-support {
+    display: flex;
+    justify-content: center;
+}
+
+.shipping, .return, .support {
+    color: white;
+    flex-basis: 33%;
+    display: flex; 
+}
+
+.shipping {
+    background-color: rgb(2, 116, 116);
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 49%, 0 0);
+}
+
+.return {
+    background-color: rgb(119, 47, 18);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 10% 100%, 0 49%, 10% 0);
+    padding-left: 30px;
+}
+
+.support {
+    background-color: rgb(45, 0, 128);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 10% 48%, 0 0);
+    padding-left: 30px;
+}
+
+.shipping-icon, .return-icon, .support-icon {
+    padding: 10px 20px;
+    font-size: 30pt;
+}
+
+/* gallery */
+.gallery-wrapper {
+    margin-top: 10px;
+}
+.gallery-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 5px;
+    align-items: stretch;
+}
+
+.gallery-item {
+    position: relative;
+    margin:0 auto;
+}
+
+.gallery-inner img {
+    max-width: 100% !important;
+}
+
+.gallery-text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin:0 auto !important;
+    width: 100%;
+}
